@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notificationBarColor">#0D47A1</color>
+    <color name="toolbarColor">#ff5179fd</color>
+    <color name="toolbarTextColor">#ffffffff</color>
+    <color name="drawerColor">#fff1f5f7</color>
+    <color name="drawerTextColor">#ff202020</color>
+    <color name="drawerBtnBgColor">#e4ebee</color>
+    <color name="drawerBtnTextColor">#547df9</color>
+    <color name="menuDividerColor">#eeeeee</color>
+    <color name="workingAreaBgColor">#ffffff</color>
+    <color name="swipeTextColor">#ffffff</color>
+</resources>

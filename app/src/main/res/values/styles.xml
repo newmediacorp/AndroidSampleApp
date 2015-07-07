@@ -1,0 +1,33 @@
+<resources>
+
+    <style name="myAppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/toolbarColor</item>
+        <item name="colorPrimaryDark">@color/notificationBarColor</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- Drawer styles -->
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar"
+        parent="@style/Widget.AppCompat.ActionBar">
+
+        <!-- Support library compatibility -->
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+    </style>
+
+
+    <!-- ActionBar title text -->
+    <style name="MyActionBarTitleText"
+        parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/toolbarTextColor</item>
+    </style>
+
+</resources>

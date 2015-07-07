@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:id="@+id/drawerLayout"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <!-- activity view -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/workingAreaBgColor"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/toolbar" />
+            <include layout="@layout/working_area" />
+
+        </RelativeLayout>
+
+        <!-- navigation drawer -->
+        <RelativeLayout
+            android:layout_gravity="left|start"
+            android:layout_width="304dp"
+            android:background="@color/drawerColor"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/logo" />
+
+            <ListView
+                android:id="@+id/left_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/menuDividerColor"
+                android:background="@color/drawerColor"
+                android:dividerHeight="1dp"
+                android:layout_below="@+id/appLogo"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="DRAWER BUTTON"
+                android:id="@+id/btnDrawerButton"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/drawerBtnTextColor"
+                android:textSize="17dp"
+                android:fontFamily="sans-serif-medium"
+                android:background="@color/drawerBtnBgColor" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
